@@ -1,0 +1,41 @@
+.header{
+    height: 150px;
+    background-image: url(fondoHeader.jpeg);
+    color: rgb(255, 255, 255);
+    border: solid rgb(67, 68, 67);
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(marmol.jpg) ; background-repeat: no-repeat;
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo{float: inline-start; width: 150px;}
+.menu {
+    float: right;
+    border:5px outset white;
+}
+th{
+    padding: 7px;
+}
+.contenido{
+    min-height: 500px;
+}
+footer {
+    color: rgb(255, 250, 251);
+    font-size: 50%;
+    border: solid rgb(67, 68, 67);
+    background-color: fuchsia;
+}
+.inicio{color: white;}
+.he{color: white;}
+.hm{color: white;}
+.consejos{color: white;}
+.cu{color: white;}
+.contacto{color: white;}
+.tallerimagen{
+    width: 400px;
+}
