@@ -23,7 +23,27 @@ th{
 }
 .contenido{
     text-align: center;
-    min-height: 480px;
+    min-height: 475px;
+}
+.barraIzquierda{
+    width: 20%;
+    float: left;
+    font-style: italic;
+    background-color: lightgray;
+}
+.barraDerecha{
+    width: 20%;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
+}
+.publicidad{
+    width: 315px;
+    min-height: 495px;
+}
+.publicidad2{
+    width: 310px;
+    min-height: 495px;
 }
 footer {
     color: rgb(255, 250, 251);
