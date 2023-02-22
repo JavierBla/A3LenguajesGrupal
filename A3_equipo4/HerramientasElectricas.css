@@ -1,0 +1,117 @@
+.header {
+    height: 150px;
+    background-image: url(fondoHeader.jpeg);
+    color: rgb(255, 255, 255);
+    border: solid rgb(67, 68, 67);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(marmol.jpg);
+    background-repeat: no-repeat;
+    height: 1400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.logo {
+    float: inline-start;
+    width: 150px;
+}
+
+.barraIzquierda {
+    width: 20%;
+    min-height: 1100px; 
+    float: left;
+    background-color: white;
+}
+
+.barraDerecha {
+    width: 20%;
+    min-height: 1100px; 
+    float: right;
+    background-color: white;
+}
+.imageni{
+    float: right;
+}
+.imagend{
+    float: left;
+}
+
+.menu {
+    float: right;
+    border: 5px outset white;
+}
+
+th {
+    padding: 7px;
+}
+.contabla{
+    border: 3px outset;
+    border-color: rgb(99, 100, 99);
+}
+.tabla{
+    border: 6px outset;
+    border-color: rgb(99, 100, 99);
+}
+
+.contenido {
+    min-height: 480px;
+}
+.marcas{
+    text-align: center;
+}
+.marca{
+    text-align: center;
+    font-weight: bolder; font-size: larger;
+}
+.nombre{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.precio{
+    text-align: right;
+    font-weight: bolder; font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.dsc{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+footer {
+    color: rgb(255, 250, 251);
+    font-size: 50%;
+    border: solid rgb(67, 68, 67);
+    min-height: 60px;
+    background-color: fuchsia;
+}
+
+.inicio {
+    color: white;
+}
+
+.he {
+    color: white;
+}
+
+.hm {
+    color: white;
+}
+
+.consejos {
+    color: white;
+}
+
+.cu {
+    color: white;
+}
+
+.contacto {
+    color: white;
+}

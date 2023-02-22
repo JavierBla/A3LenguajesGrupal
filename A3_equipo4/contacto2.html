@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>Formulario de prueba - datos</title>
+    <script type="text/javascript">
+        window.onload=function(){
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') +
+    1).split('&');
+        for(var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+    //alert (vars);
+    //alert (vars['nombre']);
+    //alert (vars['apellido']);
+    document.getElementById('nombre').innerHTML = '<strong>El nombre es:</strong>' + vars['nombre'];
+    document.getElementById('apellido').innerHTML = '<strong>El apellido es:</strong>' + vars['apellido'];
+    document.getElementById('sexo').innerHTML = '<strong>Tu elección ha sido:</strong>' + vars['sexo'];
+    if (vars ['metodo1'] != undefined) {
+        document.getElementById('metodo1').innerHTML = '<strong>Coche:</strong>' + 'Si';
+    } else {
+        document.getElementById('metodo1').innerHTML = '<strong>Coche:</strong>' + 'No';
+    }
+    if (vars['metodo2'] != undefined) {
+        document.getElementById('metodo2').innerHTML = '<strong>Moto:</strong>' + 'Si';
+    } else {
+        document.getElementById('metodo2').innerHTML = '<strong>Moto:</strong>' + 'No';
+    }
+    if (vars['metodo3'] != undefined) {
+        document.getElementById('metodo3').innerHTML = '<strong>Patin:</strong>' + 'Si';
+    } else {
+        document.getElementById('metodo3').innerHTML = '<strong>Patin:</strong>' + 'No';
+    }
+    document.getElementById('FechaNacimiento').innerHTML = '<strong>Tu fecha de nacimiento es:</strong>' + vars['FechaNacimiento'];
+    document.getElementById('colorfavorito').innerHTML = '<strong>Tu color favorito es:</strong>' + vars['colorfavorito'];
+    }
+    </script>
+    </head>
+    <body>
+        <h1>Formulario de prueba - datos recibidos</h1>
+        <div id="nombre"></div>
+        <div id="apellido"></div>
+        <div id="sexo"></div>
+        <div id="metodo1"></div>
+        <div id="metodo2"></div>
+        <div id="metodo3"></div>
+        <div id="FechaNacimiento"></div>
+        <div id="colorfavorito"></div>
+    </body>
+</html>

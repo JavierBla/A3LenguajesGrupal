@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <title>Contacto - datos</title>
+    <script type="text/javascript">
+        window.onload=function(){
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') +
+    1).split('&');
+        for(var i = 0; i < hashes.length; i++) {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+    //alert (vars);
+    //alert (vars['nombre']);
+    //alert (vars['apellido']);
+    document.getElementById('nombre').innerHTML = '<strong>El nombre es:</strong>' + vars['nombre'];
+    document.getElementById('apellido').innerHTML = '<strong>El apellido es:</strong>' + vars['apellido'];
+    document.getElementById('CorreoElectronico').innerHTML = '<strong>Tu correo electrónico es:</strong>' + vars['CorreoElectronico'];
+    document.getElementById('texto').innerHTML = '<strong>Opinion :</strong>' + vars['texto'];
+    document.getElementById('puntos').innerHTML = 'Le han dado '+vars['puntos']+' puntos'
+    }
+    </script>
+    </head>
+    <body>
+        <h1>Contacto - datos recibidos</h1>
+        <div id="nombre"></div>
+        <div id="apellido"></div>
+        <div id="CorreoElectronico"></div>
+        <div id="texto"></div>
+        <div id="puntos"></div>
+    </body>
+</html>
